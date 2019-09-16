@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title T_Spring | A Personalised Career Building Platform
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900&display=swap', rel='stylesheet')
+    link(rel='stylesheet', href='assets/css/style.css')
+    link(rel='icon', type='image/png', href='assets/img/favicon.png')
+    // Search Engine
+    meta(name='description', content='A career building portal to aid your professional growth and connect you with suitable opportunities, industry insights, events and more.')
+    meta(name='image', content='assets/img/tspring-meta.jpg')
+    // Schema.org for Google
+    meta(itemprop='name', content="T_Spring | A Personalised Career Building Platform")
+    meta(itemprop='description', content='A career building portal to aid your professional growth and connect you with suitable opportunities, industry insights, events and more.')
+    meta(itemprop='image', content='assets/img/tspring-meta.jpg')
+    // Twitter
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:title', content="T_Spring | A Personalised Career Building Platform")
+    meta(name='twitter:description', content='A career building portal to aid your professional growth and connect you with suitable opportunities, industry insights, events and more.')
+    //- meta(name='twitter:site', content='@dist_sys')
+    //- meta(name='twitter:creator', content='@dist_sys')
+    meta(name='twitter:image:src', content='assets/img/tspring-meta.jpg')
+    // Open Graph general (Facebook, Pinterest & Google+)
+    //- meta(name='url', property='og:url', content='https://dsconf.in')
+    meta(name='site_name', property='og:site_name', content='T_Steps')
+    meta(name='title', property='og:title', content="T_Spring | A Personalised Career Building Platform")
+    meta(name='type', property='og:type', content='website')
+    meta(name='image', property='og:image', content='assets/img/tspring-meta.jpg')
+    meta(name='description', property='og:description', content='A career building portal to aid your professional growth and connect you with suitable opportunities, industry insights, events and more.')
+  body
+    nav.nav
+      .container
+        .row.align-items-center
+          //- .flex-1
+          //-   button.button-unstyled(type="button", onclick="toggleMobileMenu();")
+          //-     img.nav-toggle-icon(src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/md-menu.svg", alt="menu icon")
+          .flex-1
+            a(href="./")
+              img.nav-logo(src="assets/img/tspring-logo.svg", alt="t_spring logo")
+          //- .flex-1.right
+          //-   ul.nav-menu
+          //-     li
+          //-       a(href="#!") About Us
+          //-     li
+          //-       a(href="#!") Blog
+          //- .flex-1.right
+          //-   a.button(href="#!") Contact Us
+
+    main.index
+      section.index-hero
+        .container
+          .row.align-items-center
+            .flex-1
+              h1 A Career Building Platform For Modern Professionals
+              p A one-stop solution to build your resume, connect to the right opportunities and events that boost your career growth.
+              #mc_embed_signup
+                form#mc-embedded-subscribe-form.validate(action="https://xyz.us4.list-manage.com/subscribe/post?u=13f048db3e75d963480afbcda&id=504265d59d", method="post", name="mc-embedded-subscribe-form")
+                  label Launching Soon. Sign Up For Early Access.
+                  #mc_embed_signup_scroll.row
+                    .flex-1
+                      .mc-field-group
+                        input#mce-EMAIL.required.email(type="email", value="", name="EMAIL", placeholder="Enter your email address", required)
+                      .mc-field-group
+                        input#mce-URL(type="hidden", value="", name="URL")
+                      #mce-responses.clear
+                        #mce-error-response.response(style="display:none")
+                        #mce-success-response.response(style="display:none")
+                      div(style="position: absolute; left: -5000px;" aria-hidden="true")
+                        input(type="text" name="b_13f048db3e75d963480afbcda_504265d59d" tabindex="-1" value="")
+                    .clear.flex-1
+                      button#mc-embedded-subscribe.button(type="submit", name="subscribe") Submit
+              //- form
+              //-   label Launching Soon. Sign Up For Early Access.
+              //-   .row
+              //-     .flex-1
+              //-       input(type="email", placeholder="Enter your email address")
+              //-     .flex-1
+              //-       button.button(type="submit") Submit
+            .flex-1.right
+              img(src="assets/img/tspring-hero.png", alt="adaptive upskilling career growth")
+
+      section.index-career.center
+        .container
+          h2 Build Your Career Holistically
+          p An intelligent tool to expedite your career growth and ease your job hunting experience. Enabled with machine learning adaptive features, we aim to help you build your career by connecting you with the right people, opportunities and events. This all-in-one professional growth tool enables you to:
+          .row
+            .flex-1
+              img(src="assets/img/upload-resume.png", alt="upload resume")
+              span Upload your current resume to transform into a parser-friendly resume
+            .flex-1
+              img(src="assets/img/job-opportunities.png", alt="job opportunities")
+              span Find job opportunities aligned with your goals
+            .flex-1
+              img(src="assets/img/event-suggestions.png", alt="event suggestions")
+              span Get event suggestions to craft your skills
+
+      section.index-features.center
+        .container
+          h2.white Our Features
+          .row
+            .flex-1
+              img(src="assets/img/automated-resume-parsing.png", alt="automated resume parsing")
+              h3 Automated Resume Parsing
+              p Studies show that more than 70% of resumes get rejected before being even reviewed by a human. Beat the bots with a resume that is parser-friendly and increases your visibility amongst the recruiters.
+            .flex-1
+              img(src="assets/img/instant-video.png", alt="instant video")
+              h3 Instant Video CV Creation
+              p Modern professionals gain an edge over their competitors by presenting a video CV to the recruiters. Stand out with a video CV that is compelling and can be created by following 4 simple steps.
+            .flex-1
+              img(src="assets/img/job-search.png", alt="job search")
+              h3 Personalised Job Search
+              p Candidates often miss out on relevant opportunities in the clutter of spams. Find befitting opportunities, using our filter optimised job search engine,  matching your location, domain, job-type, experience level and salary requirements instantly.
+            .flex-1
+              img(src="assets/img/event-feed.png", alt="event feed")
+              h3 Adaptive Event Feed
+              p Progressive professionals create their own opportunities. Find meetups, hangouts, conferences and workshops near you where you can engage with like-minded fellows and expand your network and reach wider bases.
+            .flex-1
+              img(src="assets/img/reward-sytem.png", alt="reward sytem")
+              h3 Integrated Reward System
+              p Make your job-hunting experience extremely fun by earning reward points. Build your profile, refer fellow candidates and earn points at each step to be redeemed at our partner brands to enjoy your job search.
+          a.button.button-inverted.index-features--learn(href="features/") Learn More
+
+      section.index-boost.center
+        .container
+          h4 Boost Your Career Growth Now
+          a.button(href="#") Sign Up
+
+    footer.footer.center
+      .container
+        p.italic
+          span.bold Powered by
+          |  T_Steps: The Talent Engagement Ecosystem
+
+    script.
+      var navMenu = document.getElementsByClassName('nav-menu')[0];
+      var navToggleIcon = document.getElementsByClassName('nav-toggle-icon')[0];
+
+      function toggleMobileMenu() {
+        if (navMenu.className === 'nav-menu') {
+          navMenu.className = 'nav-menu active';
+          navToggleIcon.src = 'https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/md-close.svg';
+        } else {
+          navMenu.className = 'nav-menu';
+          navToggleIcon.src = 'https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/md-menu.svg';
+        }
+      }
+
+      window.onload = function() {
+        document.getElementById('mce-URL').value = window.location.href;
+      }
