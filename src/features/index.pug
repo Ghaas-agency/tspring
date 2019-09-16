@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Features | T_Spring | A Personalised Career Building Platform
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900&display=swap', rel='stylesheet')
+    link(rel='stylesheet', href='../assets/css/style.css')
+    link(rel='icon', type='image/png', href='../assets/img/favicon.png')
+    // Search Engine
+    meta(name='description', content='A career building portal to aid your professional growth and connect you with suitable opportunities, industry insights, events and more.')
+    meta(name='image', content='../assets/img/tspring-meta.jpg')
+    // Schema.org for Google
+    meta(itemprop='name', content="Features | T_Spring | A Personalised Career Building Platform")
+    meta(itemprop='description', content='A career building portal to aid your professional growth and connect you with suitable opportunities, industry insights, events and more.')
+    meta(itemprop='image', content='../assets/img/tspring-meta.jpg')
+    // Twitter
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:title', content="Features | T_Spring | A Personalised Career Building Platform")
+    meta(name='twitter:description', content='A career building portal to aid your professional growth and connect you with suitable opportunities, industry insights, events and more.')
+    //- meta(name='twitter:site', content='@dist_sys')
+    //- meta(name='twitter:creator', content='@dist_sys')
+    meta(name='twitter:image:src', content='../assets/img/tspring-meta.jpg')
+    // Open Graph general (Facebook, Pinterest & Google+)
+    //- meta(name='url', property='og:url', content='https://dsconf.in')
+    meta(name='site_name', property='og:site_name', content='T_Steps')
+    meta(name='title', property='og:title', content="Features | T_Spring | A Personalised Career Building Platform")
+    meta(name='type', property='og:type', content='website')
+    meta(name='image', property='og:image', content='../assets/img/tspring-meta.jpg')
+    meta(name='description', property='og:description', content='A career building portal to aid your professional growth and connect you with suitable opportunities, industry insights, events and more.')
+  body
+    nav.nav
+      .container
+        .row.align-items-center
+          //- .flex-1
+          //-   button.button-unstyled(type="button", onclick="toggleMobileMenu();")
+          //-     img.nav-toggle-icon(src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/md-menu.svg", alt="menu icon")
+          .flex-1
+            a(href="../")
+              img.nav-logo(src="../assets/img/tspring-logo.svg", alt="t_spring logo")
+          //- .flex-1.right
+          //-   ul.nav-menu
+          //-     li
+          //-       a(href="#!") About Us
+          //-     li
+          //-       a(href="#!") Blog
+          //- .flex-1.right
+          //-   a.button(href="#!") Contact Us
+
+    main.features
+      header.features-hero.center
+        .container
+          h1.white Boost Your Career Growth
+
+      section.features-items.center
+        .container
+          .features-items__section
+            p.features-items--heading.bold Automated Resume Parsing
+            p Upload your CV in any format and get an automated parser-friendly CV instantly. We have three convenient options for you to upload your CV:
+            .row.parsing
+              .flex-1
+                img(src="../assets/img/parsing-create.jpg", alt="parsing create")
+              .flex-1
+                img(src="../assets/img/parsing-link.jpg", alt="parsing link")
+              .flex-1
+                img(src="../assets/img/parsing-upload.jpg", alt="parsing upload")
+          .features-items--separator
+          .features-items__section
+            p.features-items--heading.bold Instant Video CV Creation
+            p Get a video CV to attract recruiters and opportunities and stand out in the job market instantly.  We help you create a video CV in four  simple steps:
+            .row
+              img(src="../assets/img/video-cv-creation.jpg", alt="video cv creation")
+          .features-items--separator
+          .features-items__section
+            p.features-items--heading.bold Personalised Job Search
+            p Find befitting opportunities, using our filter optimised job search engine, matching your location, domain, job-type, experience level and salary requirements instantly.
+            .row.job-search
+              .flex-1
+                img(src="../assets/img/job-search-1.jpg", alt="job search")
+              .flex-1
+                img(src="../assets/img/job-search-2.jpg", alt="job search")
+          .features-items--separator
+          .features-items__section
+            p.features-items--heading.bold Adaptive Event Feed
+            p Find meetups, hangouts, conferences and workshops near you where you can engage with like-minded fellows and expand your network and reach wider bases.
+            .row.events
+              .flex-1
+                img(src="../assets/img/event-1.jpg", alt="event")
+              .flex-1
+                img(src="../assets/img/event-2.jpg", alt="event")
+              .flex-1
+                img(src="../assets/img/event-3.jpg", alt="event")
+              .flex-1
+                img(src="../assets/img/event-4.jpg", alt="event")
+          .features-items--separator
+          .features-items__section
+            p.features-items--heading.bold Integrated Referrals and Reward System
+            p Make your job-hunting experience extremely fun by earning reward points. Build your profile, refer fellow candidates and earn points at each step to be redeemed at our partner brands to enjoy your job search.
+            .row.rewards
+              .flex-1
+                img(src="../assets/img/reward-1.jpg", alt="reward")
+              .flex-1
+                img(src="../assets/img/reward-2.jpg", alt="reward")
+              .flex-1
+                img(src="../assets/img/reward-3.jpg", alt="reward")
+
+
+    footer.footer.center
+      .container
+        p.italic
+          span.bold Powered by
+          |  T_Steps: The Talent Engagement Ecosystem
+
+    script.
+      var navMenu = document.getElementsByClassName('nav-menu')[0];
+      var navToggleIcon = document.getElementsByClassName('nav-toggle-icon')[0];
+
+      function toggleMobileMenu() {
+        if (navMenu.className === 'nav-menu') {
+          navMenu.className = 'nav-menu active';
+          navToggleIcon.src = 'https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/md-close.svg';
+        } else {
+          navMenu.className = 'nav-menu';
+          navToggleIcon.src = 'https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/md-menu.svg';
+        }
+      }
